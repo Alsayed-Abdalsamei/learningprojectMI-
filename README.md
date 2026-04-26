@@ -1,4 +1,4 @@
-# learningprojectMI-
+<img width="1904" height="900" alt="Screenshot 2025-08-31 203159" src="https://github.com/user-attachments/assets/e033ff4b-587f-4eb4-a34a-53084383e6bf" /># learningprojectMI-
 Titanic’s data... to a Smart Prediction System
 # 🚢 Smart Machine Learning System with Interactive GUI (Titanic-Based)
 
@@ -118,8 +118,11 @@ python main.py
 
 ## 🎥 Demo
 
-> Add screenshots
+
 > go to images
+> prediction page >>> <img width="722" height="509" alt="Screenshot 2025-09-07 142803" src="https://github.com/user-attachments/assets/73a6f20b-32a4-4155-9aca-9ff6bae6ee2e" />
+
+
 demo video of the GUI here
 https://www.linkedin.com/posts/alsayedabdalsamei_machinelearning-python-qtdesin-activity-7338971228541452289-9gfM?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFH-oSQBaNGvRA1wVfFjP_tI972WYjZAIxc
 ---
