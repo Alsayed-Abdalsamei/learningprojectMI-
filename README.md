@@ -1,4 +1,4 @@
-<img width="1904" height="900" alt="Screenshot 2025-08-31 203159" src="https://github.com/user-attachments/assets/e033ff4b-587f-4eb4-a34a-53084383e6bf" /># learningprojectMI-
+# learningprojectMI-
 Titanic’s data... to a Smart Prediction System
 # 🚢 Smart Machine Learning System with Interactive GUI (Titanic-Based)
 
