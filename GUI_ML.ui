@@ -1,0 +1,1269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1331</width>
+    <height>895</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QTabWidget::pane {
+    background-color: rgb(217, 64, 255);
+}</string>
+  </property>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1371</width>
+     <height>931</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    font: 75 12pt &quot;Segoe Print&quot;;
+}
+
+QComboBox {
+    background-color: #e0f7fa;  /* لون الخلفية */
+    color: #004d40;             /* لون الخط */
+    font: 75 12pt &quot;Segoe Print&quot;;  /* نوع وحجم الخط */
+    border: 2px solid #00796b;   /* حدود الـ ComboBox */
+    border-radius: 5px;          /* الزوايا دائرية */
+    padding: 5px;                /* تقليل المسافة داخل الـ ComboBox */
+}
+
+QComboBox::drop-down {
+    border-left: 1px solid #00796b;
+    background: #b2dfdb;
+    width: 25px;
+}
+
+QComboBox QAbstractItemView {
+    background-color: white;
+    selection-background-color: #80cbc4;
+    selection-color: black;
+}
+
+QComboBox QAbstractItemView::item {
+    padding: 10px 15px;   /* مسافة بين كل عنصر في القائمة */
+
+
+     /* تحديد الحد الأدنى للارتفاع */
+}
+QDoubleSpinBox {
+    background-color: #f1f8e9;   /* لون الخلفية */
+    color: #33691e;              /* لون النص */
+    font: 75 12pt &quot;Segoe Print&quot;; /* نوع الخط وحجمه */
+    border: 2px solid #8bc34a;   /* لون الحدود */
+    border-radius: 5px;          /* الزوايا مستديرة */
+    padding: 5px 10px;           /* مسافة داخلية */
+}
+
+QDoubleSpinBox::up-button {
+    subcontrol-origin: border;
+    subcontrol-position: top right;
+    width: 20px;
+    border-left: 1px solid #8bc34a;
+    background-color: #c5e1a5;
+}
+
+QDoubleSpinBox::down-button {
+    subcontrol-origin: border;
+    subcontrol-position: bottom right;
+    width: 20px;
+    border-left: 1px solid #8bc34a;
+    background-color: #c5e1a5;
+}
+
+QDoubleSpinBox::up-arrow,
+QDoubleSpinBox::down-arrow {
+    image: none; /* ممكن تشيل الصورة وتستخدم رمز أو تسيبها فاضية */
+}
+
+
+
+QPushButton {
+    background-color: #4db6ac;     /* لون خلفية الزر */
+    color: white;                  /* لون النص */
+    font: 75 12pt &quot;Segoe Print&quot;;   /* نوع الخط وحجمه */
+    border: none;                  /* إزالة الإطار الافتراضي */
+    border-radius: 10px;           /* الزوايا مدورة */
+    padding: 10px 20px;            /* مسافة داخلية لتكبير الزر */
+   
+}
+
+QPushButton:hover {
+    background-color: #00796b;     /* لون مختلف عند مرور الماوس */
+}
+
+QPushButton:pressed {
+    background-color: #004d40;     /* لون مختلف عند الضغط */
+} 
+
+
+
+
+</string>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <property name="documentMode">
+    <bool>false</bool>
+   </property>
+   <widget class="QWidget" name="tab">
+    <attribute name="title">
+     <string>Tab 1</string>
+    </attribute>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>60</y>
+       <width>591</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 25pt &quot;Segoe Print&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Machine Learning  Project</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton">
+     <property name="geometry">
+      <rect>
+       <x>510</x>
+       <y>330</y>
+       <width>331</width>
+       <height>171</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Load Data</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_2">
+     <property name="geometry">
+      <rect>
+       <x>1110</x>
+       <y>780</y>
+       <width>171</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>NEXT</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_2">
+    <attribute name="title">
+     <string>Tab 2</string>
+    </attribute>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>540</x>
+       <y>30</y>
+       <width>351</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 25pt &quot;Segoe Print&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Deteails Dataset</string>
+     </property>
+    </widget>
+    <widget class="QTabWidget" name="tabWidget_2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>270</y>
+       <width>1331</width>
+       <height>621</height>
+      </rect>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <property name="documentMode">
+      <bool>false</bool>
+     </property>
+     <widget class="QWidget" name="tab_3">
+      <attribute name="title">
+       <string>Tab 1</string>
+      </attribute>
+      <widget class="QTableView" name="tableView">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>10</y>
+         <width>1291</width>
+         <height>571</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-color: rgb(255, 255, 255);</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_4">
+      <attribute name="title">
+       <string>Tab 2</string>
+      </attribute>
+      <widget class="QTableView" name="tableView_3">
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>140</y>
+         <width>931</width>
+         <height>331</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_5">
+      <attribute name="title">
+       <string>Page</string>
+      </attribute>
+      <widget class="QTextEdit" name="textEdit">
+       <property name="geometry">
+        <rect>
+         <x>450</x>
+         <y>20</y>
+         <width>451</width>
+         <height>561</height>
+        </rect>
+       </property>
+       <property name="html">
+        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:7.8pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:130.77%; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'menlo,consolas,DejaVu Sans Mono,monospace'; font-size:16pt; color:#000000; background-color:#ffffff;&quot;&gt;PassengerId      0&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:130.77%; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'menlo,consolas,DejaVu Sans Mono,monospace'; font-size:16pt; color:#000000; background-color:#ffffff;&quot;&gt;Survived         0&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:130.77%; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'menlo,consolas,DejaVu Sans Mono,monospace'; font-size:16pt; color:#000000; background-color:#ffffff;&quot;&gt;Pclass           0&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:130.77%; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'menlo,consolas,DejaVu Sans Mono,monospace'; font-size:16pt; color:#000000; background-color:#ffffff;&quot;&gt;Name             0&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:130.77%; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'menlo,consolas,DejaVu Sans Mono,monospace'; font-size:16pt; color:#000000; background-color:#ffffff;&quot;&gt;Sex              0&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:130.77%; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'menlo,consolas,DejaVu Sans Mono,monospace'; font-size:16pt; color:#000000; background-color:#ffffff;&quot;&gt;Age             86&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:130.77%; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'menlo,consolas,DejaVu Sans Mono,monospace'; font-size:16pt; color:#000000; background-color:#ffffff;&quot;&gt;SibSp            0&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:130.77%; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'menlo,consolas,DejaVu Sans Mono,monospace'; font-size:16pt; color:#000000; background-color:#ffffff;&quot;&gt;Parch            0&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:130.77%; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'menlo,consolas,DejaVu Sans Mono,monospace'; font-size:16pt; color:#000000; background-color:#ffffff;&quot;&gt;Ticket           0&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:130.77%; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'menlo,consolas,DejaVu Sans Mono,monospace'; font-size:16pt; color:#000000; background-color:#ffffff;&quot;&gt;Fare             1&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:130.77%; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'menlo,consolas,DejaVu Sans Mono,monospace'; font-size:16pt; color:#000000; background-color:#ffffff;&quot;&gt;Cabin          327&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:130.77%; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'menlo,consolas,DejaVu Sans Mono,monospace'; font-size:16pt; color:#000000; background-color:#ffffff;&quot;&gt;Embarked         0&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:130.77%; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'menlo,consolas,DejaVu Sans Mono,monospace'; font-size:16pt; color:#000000; background-color:#ffffff;&quot;&gt;dtype: int64&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_6">
+      <attribute name="title">
+       <string>Page</string>
+      </attribute>
+      <widget class="QTextEdit" name="textEdit_2">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>10</y>
+         <width>1191</width>
+         <height>571</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="html">
+        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:7.8pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:130.77%; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'menlo,consolas,DejaVu Sans Mono,monospace'; font-size:11pt; font-style:italic; color:rgba(0,0,0,0.866667); background-color:#ffffff;&quot;&gt;&amp;lt;class 'pandas.core.frame.DataFrame'&amp;gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:130.77%; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'menlo,consolas,DejaVu Sans Mono,monospace'; font-size:11pt; font-style:italic; color:rgba(0,0,0,0.866667); background-color:#ffffff;&quot;&gt;RangeIndex: 418 entries, 0 to 417&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:130.77%; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'menlo,consolas,DejaVu Sans Mono,monospace'; font-size:11pt; font-style:italic; color:rgba(0,0,0,0.866667); background-color:#ffffff;&quot;&gt;Data columns (total 12 columns):&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:130.77%; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'menlo,consolas,DejaVu Sans Mono,monospace'; font-size:11pt; font-style:italic; color:rgba(0,0,0,0.866667); background-color:#ffffff;&quot;&gt; #   Column       Non-Null Count  Dtype  &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:130.77%; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'menlo,consolas,DejaVu Sans Mono,monospace'; font-size:11pt; font-style:italic; color:rgba(0,0,0,0.866667); background-color:#ffffff;&quot;&gt;---  ------       --------------  -----  &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:130.77%; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'menlo,consolas,DejaVu Sans Mono,monospace'; font-size:11pt; font-style:italic; color:rgba(0,0,0,0.866667); background-color:#ffffff;&quot;&gt; 0   PassengerId  418 non-null    int64  &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:130.77%; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'menlo,consolas,DejaVu Sans Mono,monospace'; font-size:11pt; font-style:italic; color:rgba(0,0,0,0.866667); background-color:#ffffff;&quot;&gt; 1   Survived     418 non-null    int64  &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:130.77%; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'menlo,consolas,DejaVu Sans Mono,monospace'; font-size:11pt; font-style:italic; color:rgba(0,0,0,0.866667); background-color:#ffffff;&quot;&gt; 2   Pclass       418 non-null    int64  &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:130.77%; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'menlo,consolas,DejaVu Sans Mono,monospace'; font-size:11pt; font-style:italic; color:rgba(0,0,0,0.866667); background-color:#ffffff;&quot;&gt; 3   Name         418 non-null    object &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:130.77%; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'menlo,consolas,DejaVu Sans Mono,monospace'; font-size:11pt; font-style:italic; color:rgba(0,0,0,0.866667); background-color:#ffffff;&quot;&gt; 4   Sex          418 non-null    object &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:130.77%; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'menlo,consolas,DejaVu Sans Mono,monospace'; font-size:11pt; font-style:italic; color:rgba(0,0,0,0.866667); background-color:#ffffff;&quot;&gt; 5   Age          332 non-null    float64&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:130.77%; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'menlo,consolas,DejaVu Sans Mono,monospace'; font-size:11pt; font-style:italic; color:rgba(0,0,0,0.866667); background-color:#ffffff;&quot;&gt; 6   SibSp        418 non-null    int64  &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:130.77%; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'menlo,consolas,DejaVu Sans Mono,monospace'; font-size:11pt; font-style:italic; color:rgba(0,0,0,0.866667); background-color:#ffffff;&quot;&gt; 7   Parch        418 non-null    int64  &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:130.77%; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'menlo,consolas,DejaVu Sans Mono,monospace'; font-size:11pt; font-style:italic; color:rgba(0,0,0,0.866667); background-color:#ffffff;&quot;&gt; 8   Ticket       418 non-null    object &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:130.77%; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'menlo,consolas,DejaVu Sans Mono,monospace'; font-size:11pt; font-style:italic; color:rgba(0,0,0,0.866667); background-color:#ffffff;&quot;&gt; 9   Fare         417 non-null    float64&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:130.77%; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'menlo,consolas,DejaVu Sans Mono,monospace'; font-size:11pt; font-style:italic; color:rgba(0,0,0,0.866667); background-color:#ffffff;&quot;&gt; 10  Cabin        91 non-null     object &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:130.77%; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'menlo,consolas,DejaVu Sans Mono,monospace'; font-size:11pt; font-style:italic; color:rgba(0,0,0,0.866667); background-color:#ffffff;&quot;&gt; 11  Embarked     418 non-null    object &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:130.77%; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'menlo,consolas,DejaVu Sans Mono,monospace'; font-size:11pt; font-style:italic; color:rgba(0,0,0,0.866667); background-color:#ffffff;&quot;&gt;dtypes: float64(2), int64(5), object(5)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:130.77%; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'menlo,consolas,DejaVu Sans Mono,monospace'; font-size:11pt; font-style:italic; color:rgba(0,0,0,0.866667); background-color:#ffffff;&quot;&gt;memory usage: 39.3+ KB&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="pushButton_3">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>160</y>
+       <width>181</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>view data</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_4">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>160</y>
+       <width>181</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>describe data</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_5">
+     <property name="geometry">
+      <rect>
+       <x>750</x>
+       <y>160</y>
+       <width>181</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>NUll</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_6">
+     <property name="geometry">
+      <rect>
+       <x>1080</x>
+       <y>160</y>
+       <width>181</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>infotmatiom</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_7">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>40</y>
+       <width>111</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Back</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_8">
+     <property name="geometry">
+      <rect>
+       <x>1190</x>
+       <y>40</y>
+       <width>111</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Next</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_7">
+    <attribute name="title">
+     <string>Page</string>
+    </attribute>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>20</y>
+       <width>601</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 25pt &quot;Segoe Print&quot;;
+</string>
+     </property>
+     <property name="text">
+      <string>Cleaning and Preprocessing</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_9">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>40</y>
+       <width>111</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Back</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_10">
+     <property name="geometry">
+      <rect>
+       <x>1190</x>
+       <y>40</y>
+       <width>111</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Next</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_11">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>200</y>
+       <width>231</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>dropCols</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_12">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>200</y>
+       <width>231</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>handleNA</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_13">
+     <property name="geometry">
+      <rect>
+       <x>560</x>
+       <y>200</y>
+       <width>231</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>encodeCat</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_14">
+     <property name="geometry">
+      <rect>
+       <x>820</x>
+       <y>200</y>
+       <width>231</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>engFeatures</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_15">
+     <property name="geometry">
+      <rect>
+       <x>1080</x>
+       <y>200</y>
+       <width>231</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>scaleNum</string>
+     </property>
+    </widget>
+    <widget class="QTableView" name="tableView_2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>270</y>
+       <width>1311</width>
+       <height>601</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_8">
+    <attribute name="title">
+     <string>Page</string>
+    </attribute>
+    <widget class="QComboBox" name="type_relationship">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>130</y>
+       <width>811</width>
+       <height>64</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#sibsp_input {
+    background-color: #f1f8e9;   /* لون الخلفية */
+    color: #33691e;              /* لون النص */
+    font: 75 12pt &quot;Segoe Print&quot;; /* نوع الخط وحجمه */
+    border: 2px solid #8bc34a;   /* لون الحدود */
+    border-radius: 5px;          /* الزوايا مستديرة */
+    padding: 5px 10px;           /* مسافة داخلية */
+}
+
+#sibsp_input::up-button {
+    subcontrol-origin: border;
+    subcontrol-position: top right;
+    width: 20px;
+    border-left: 1px solid #8bc34a;
+    background-color: #c5e1a5;
+}
+
+#sibsp_input::down-button {
+    subcontrol-origin: border;
+    subcontrol-position: bottom right;
+    width: 20px;
+    border-left: 1px solid #8bc34a;
+    background-color: #c5e1a5;
+}
+
+#sibsp_input::up-arrow,
+#sibsp_input::down-arrow {
+    image: none;
+}</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>Box Plots: Age and Fare vs Survival</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Distributions of Important Features (Before IQR Outlier Removal)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Survival Distribution by Sex</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Survival Distribution by Passenger Class</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Passenger Age Distribution</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Fare Distribution</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Fare Distribution by Survival Status</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Distribution of Family Size (SibSp + Parch)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Age vs Fare (Colored by Survival)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Age Distribution by Passenger Class</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QGraphicsView" name="graphicsView_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>221</y>
+       <width>1311</width>
+       <height>651</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_14">
+     <property name="geometry">
+      <rect>
+       <x>84</x>
+       <y>139</y>
+       <width>311</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 11pt &quot;Segoe Print&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Choose the type of relationship :</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>440</x>
+       <y>20</y>
+       <width>471</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 25pt &quot;Segoe Print&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Visualizations Section</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_16">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>40</y>
+       <width>111</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Back</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_17">
+     <property name="geometry">
+      <rect>
+       <x>1190</x>
+       <y>40</y>
+       <width>111</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Next</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_9">
+    <attribute name="title">
+     <string>Page</string>
+    </attribute>
+    <widget class="QTabWidget" name="tabWidget_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>100</y>
+       <width>1341</width>
+       <height>131</height>
+      </rect>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <property name="documentMode">
+      <bool>false</bool>
+     </property>
+     <widget class="QWidget" name="tab_10">
+      <attribute name="title">
+       <string>Tab 1</string>
+      </attribute>
+      <widget class="QPushButton" name="pushButton_18">
+       <property name="geometry">
+        <rect>
+         <x>132</x>
+         <y>27</y>
+         <width>241</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Supervised </string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_19">
+       <property name="geometry">
+        <rect>
+         <x>870</x>
+         <y>30</y>
+         <width>241</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Unsupervised </string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_11">
+      <attribute name="title">
+       <string>Tab 2</string>
+      </attribute>
+      <widget class="QPushButton" name="pushButton_20">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>30</y>
+         <width>241</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Classification</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_21">
+       <property name="geometry">
+        <rect>
+         <x>890</x>
+         <y>30</y>
+         <width>241</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Regression</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_12">
+      <attribute name="title">
+       <string>Page</string>
+      </attribute>
+      <widget class="QPushButton" name="pushButton_22">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>50</y>
+         <width>191</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Decision Tree</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_23">
+       <property name="geometry">
+        <rect>
+         <x>220</x>
+         <y>50</y>
+         <width>201</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">padding: 0px
+</string>
+       </property>
+       <property name="text">
+        <string>Logistic Regression</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_24">
+       <property name="geometry">
+        <rect>
+         <x>450</x>
+         <y>50</y>
+         <width>191</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>SVM</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_25">
+       <property name="geometry">
+        <rect>
+         <x>890</x>
+         <y>50</y>
+         <width>191</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>GaussianNB</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_26">
+       <property name="geometry">
+        <rect>
+         <x>1110</x>
+         <y>50</y>
+         <width>191</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Random Forest</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_27">
+       <property name="geometry">
+        <rect>
+         <x>670</x>
+         <y>50</y>
+         <width>191</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>KNN</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>30</y>
+       <width>401</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 25pt &quot;Segoe Print&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Model Evalution</string>
+     </property>
+    </widget>
+    <widget class="QTabWidget" name="tabWidget_4">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>240</y>
+       <width>1321</width>
+       <height>641</height>
+      </rect>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <property name="documentMode">
+      <bool>false</bool>
+     </property>
+     <widget class="QWidget" name="tab_13">
+      <attribute name="title">
+       <string>Tab 1</string>
+      </attribute>
+     </widget>
+     <widget class="QWidget" name="tab_14">
+      <attribute name="title">
+       <string>Tab 2</string>
+      </attribute>
+      <widget class="QTableView" name="tableView_4">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>10</y>
+         <width>211</width>
+         <height>601</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QGraphicsView" name="graphicsView_3">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>10</y>
+         <width>661</width>
+         <height>601</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QGraphicsView" name="graphicsView_4">
+       <property name="geometry">
+        <rect>
+         <x>870</x>
+         <y>10</y>
+         <width>441</width>
+         <height>601</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="pushButton_28">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>40</y>
+       <width>111</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Back</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_29">
+     <property name="geometry">
+      <rect>
+       <x>1190</x>
+       <y>40</y>
+       <width>111</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Next</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_15">
+    <attribute name="title">
+     <string>Page</string>
+    </attribute>
+    <widget class="QLabel" name="label_11">
+     <property name="geometry">
+      <rect>
+       <x>910</x>
+       <y>250</y>
+       <width>101</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 20pt &quot;Segoe Print&quot;;</string>
+     </property>
+     <property name="text">
+      <string>familysize_input</string>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="family_input">
+     <property name="geometry">
+      <rect>
+       <x>800</x>
+       <y>330</y>
+       <width>301</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"> #family_input{
+    background-color: #f1f8e9;
+    color: #33691e;
+    font: 75 12pt &quot;Segoe Print&quot;;
+    border: 2px solid #8bc34a;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+ #family_input::up-button {
+    subcontrol-origin: border;
+    subcontrol-position: top right;
+    width: 20px;
+    border-left: 1px solid #8bc34a;
+    background-color: #c5e1a5;
+}
+
+ #family_input::down-button {
+    subcontrol-origin: border;
+    subcontrol-position: bottom right;
+    width: 20px;
+    border-left: 1px solid #8bc34a;
+    background-color: #c5e1a5;
+}
+
+ #family_input::up-arrow,
+ #family_input::down-arrow {
+    image: none;
+}</string>
+     </property>
+    </widget>
+    <widget class="QDoubleSpinBox" name="fare_input">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>480</y>
+       <width>301</width>
+       <height>71</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>290</y>
+       <width>201</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 10pt &quot;Segoe Print&quot;;</string>
+     </property>
+     <property name="text">
+      <string>1:female  ,  0:male</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="sex_input">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>330</y>
+       <width>301</width>
+       <height>64</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <item>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>1</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>480</x>
+       <y>20</y>
+       <width>421</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 25pt &quot;Segoe Print&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Prediction Form</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>360</x>
+       <y>250</y>
+       <width>61</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 20pt &quot;Segoe Print&quot;;</string>
+     </property>
+     <property name="text">
+      <string>sex   </string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="embarked_input">
+     <property name="geometry">
+      <rect>
+       <x>800</x>
+       <y>490</y>
+       <width>301</width>
+       <height>64</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>C</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Q</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>S</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_12">
+     <property name="geometry">
+      <rect>
+       <x>870</x>
+       <y>420</y>
+       <width>191</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 20pt &quot;Segoe Print&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Embarked
+</string>
+     </property>
+    </widget>
+    <widget class="QDoubleSpinBox" name="age_input">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>170</y>
+       <width>301</width>
+       <height>71</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="predict_button">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>650</y>
+       <width>181</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 20pt &quot;Segoe Print&quot;;</string>
+     </property>
+     <property name="text">
+      <string>OK</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>350</x>
+       <y>420</y>
+       <width>71</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 20pt &quot;Segoe Print&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Fare</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="pclass_input">
+     <property name="geometry">
+      <rect>
+       <x>800</x>
+       <y>173</y>
+       <width>301</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>2</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>3</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_10">
+     <property name="geometry">
+      <rect>
+       <x>350</x>
+       <y>100</y>
+       <width>91</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 20pt &quot;Segoe Print&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Age</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_15">
+     <property name="geometry">
+      <rect>
+       <x>900</x>
+       <y>110</y>
+       <width>121</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 20pt &quot;Segoe Print&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Pclass</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_30">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>40</y>
+       <width>111</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Back</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
